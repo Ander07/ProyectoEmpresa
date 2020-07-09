@@ -6,7 +6,7 @@ var port = 3300;
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/ControlEmpresas',{useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify:false})
+mongoose.connect('url base de datos',{useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify:false})
 .then(()=>{
     console.log('Conexion a la base de datos correctamente.');
     app.listen(port, ()=>{
